@@ -136,9 +136,6 @@ def predict(text, unigrams, bigrams, trigrams):
 
     # Getting count of n-gram in the dictionary
 
-    # last_word_count = unigrams.setdefault(last_word, 0)
-    # last_two_words_count = bigrams.setdefault(" ".join(last_two_words), 0)
-
     last_word_count = unigrams[last_word]
     last_two_words_count = bigrams[" ".join(last_two_words)]
 
